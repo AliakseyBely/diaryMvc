@@ -10,18 +10,6 @@
     <script src="~/Scripts/modernizr-2.6.2.js"></script>
 </head>
 <body>
-   <div class="page-header">
-       <a src ="~/Home/Index" class="logo"><h3>Shop</h3></a>       
-   </div>
-    
-    <header class="header">
-        <div class="header">
-            @Html.ActionLink("Home", "Home", "Home") |
-            @Html.ActionLink("Contacts", "Contact", "Home") |
-            @Html.ActionLink("About", "About", "Home")
-        </div>
-        
-    </header>
     <div class="container body-content">
         @RenderBody()
         <hr />
