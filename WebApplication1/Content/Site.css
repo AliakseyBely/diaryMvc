@@ -1,7 +1,8 @@
-﻿/*body {
+﻿body {
+    background-color: #fed0af;
     padding-top: 50px;
     padding-bottom: 20px;
-}*/
+}
 
 /* Set padding to keep content from hitting the edges */
 .body-content {
@@ -16,3 +17,49 @@ textarea {
     max-width: 280px;
 }
 
+/*--header-----------------------------------------------------------------*/
+
+
+
+/*--body-------------------------------------------------------------------*/
+
+
+
+/*--footer-----------------------------------------------------------------*/
+
+.changBg{
+    float: right;
+}
+
+.changBg div{
+    border: 2px solid #fff;
+    border-radius: 5px;
+    height: 20px;
+    width: 20px;
+    margin: 5px;
+    float: right;
+}
+
+.changBg div:hover{
+    border-color: black;
+}
+
+.changBg div:active{
+    border-width: 4px;
+}
+
+#orang{
+    background-color: #fed0af;
+}
+
+#red{
+    background-color: #fe9e9e;
+}
+
+#blue{
+    background-color: #82aefe;
+}
+
+#green{
+    background-color: #b2ffb4;
+}
