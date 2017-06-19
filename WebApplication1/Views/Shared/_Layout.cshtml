@@ -12,7 +12,17 @@
     <script src="~/Scripts/SiteScript.js"></script>
 </head>
 <body>
-    <div class="container body-content">
+    <div class="navbar navbar-inverse navbar-fixed-top" id="header">
+        <div class="container">
+            <div class="navbar-header">
+                @Html.ActionLink("MyDiary", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav"></ul>
+            </div>
+        </div>
+    </div>
+    <div class="container body-content content">
         @RenderBody()
         <hr />
         <footer>
