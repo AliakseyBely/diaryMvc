@@ -1,10 +1,29 @@
-﻿@*@model*@ 
+﻿@model IEnumerable<WebApplication1.MessDiary>
 @{
     ViewBag.Title = "My Diary";
 }
-<h2>Записи дневника</h2>
+<h2>Мои события</h2>
 
-<h1>@ViewBag.hell</h1>
+@Html.ActionLink("Новая запись", "Create", "Home", new { @id = "addButtom" })
 
+<table class="table">
+    <tr>
+        <th>Событие</th>
+        <th>Дата события</th>
+        <th>Действия</th>
+    </tr>
+    @foreach (var mess in Model)
+    {
+        <tr>
+            <td>@mess.Topic</td>
+            <td>@mess.Date</td>
+            <td>
+                @Html.ActionLink("Открыть", "Open", "Home", new { id = mess.Id }) | 
+                @Html.ActionLink("Удалить", "Delete", "Home", new { id = mess.Id })
+            </td>
 
+        </tr>
+    }
+
+</table>
 

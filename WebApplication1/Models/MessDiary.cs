@@ -16,10 +16,13 @@ namespace WebApplication1
         }
 
         public int Id { get; set; }
-
+        [Required (ErrorMessage = "Поле должно быть заполнено")]
+        [Display (Name = "Тема")]
         [StringLength(200)]
         public string Topic { get; set; }
 
+        [Required(ErrorMessage = "Поле должно быть заполнено")]
+        [Display(Name = "Запись")]
         [StringLength(3000)]
         public string Message { get; set; }
 

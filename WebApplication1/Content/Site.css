@@ -30,6 +30,31 @@ textarea {
 
 }
 
+.textBox{
+    height: 100px;
+    width: 200px;
+}
+
+#addButtom{
+    border: 2px solid #b2ffb4;
+    border-radius: 7px;
+    background-color: #b2ffb4;
+    height: 40px;
+    width: 200px;
+    margin: 10px;
+    float: right;
+    text-align:center;
+    text-decoration: none;
+}
+
+#addButtom:hover{
+    border-color: #fff;
+}
+
+#addButtom:active{
+    border: 2px solid #03ff17;
+}
+
 /*--footer-----------------------------------------------------------------*/
 
 .changBg{
